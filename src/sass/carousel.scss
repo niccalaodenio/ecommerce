@@ -1,0 +1,81 @@
+@import "breakpoints";
+.car {
+  @include media-breakpoint-up(medium) {
+    // width: 27% !important;
+    // top: 7rem!important;
+    // left: 11%!important;
+    margin-top: 6.5rem !important;
+    margin-left: 11% !important;
+    margin-bottom: 2.1rem;
+    margin-right: 4.5% !important;
+    padding: 1rem;
+   // width: 75%!important;
+  }
+  @include media-breakpoint-up(large){
+    width: 65%!important;
+    margin-left:17%!important;
+  }
+  .carousel {
+    @include media-breakpoint-up(medium) {
+      //width: 80%!important;
+    }
+  }
+  .carousel-inner {
+    @include media-breakpoint-up(medium) {
+      //width: 58% !important;
+      border-radius: 13px;
+    }
+  }
+  .carousel-indicators {
+    @include media-breakpoint-up(sm) {
+      bottom: -6.9rem !important;
+      //left: 11%!important;
+      gap: 0.7vw;
+      height: 6rem;
+      width: 29%;
+      margin-right: 0 !important;
+      margin-bottom: -0.5rem !important;
+      margin-left: 35% !important;
+    }
+  }
+}
+
+.carousel-indicators [data-bs-target] {
+  border-top: none !important;
+  border-bottom: none !important;
+  opacity: 1 !important;
+}
+
+.indi {
+  @include media-breakpoint-up(medium) {
+    // bottom: -2rem!important;
+    // left: 34%!important;
+    width: 5vw !important;
+    height: 9vh !important;
+    border-radius: 7px;
+  }
+}
+.carousel-indicators .active {
+  opacity: 0.6 !important;
+}
+@include breakpoint(medium,large){
+  .imgCar {
+    width: 270px !important;
+  }
+  .car{
+    margin-left: 7%!important;
+  }
+  .indi{
+    width: 6vw !important;
+    height: 6vh !important;
+  }
+}
+.imgCar {
+  width: 100% ;
+  @include media-breakpoint-up(medium) {
+    // width: 50%!important;
+  }
+}
+/* iPads (portrait and landscape) ----------- */
+
+ 

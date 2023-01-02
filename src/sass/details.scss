@@ -1,0 +1,143 @@
+@import "breakpoints";
+$bold: 700;
+$orange: #ff7d1a;
+$paleOrange: #ffede0;
+$darkGrayishBlue: hsl(219, 9%, 45%);
+$grayishBlue: hsl(220, 14%, 75%);
+.prodetails {
+  padding: 1rem 1.25rem !important;
+ 
+  @include media-breakpoint-up(medium) {
+    margin-top: 6.5rem !important;
+    margin-right: 11%;
+    margin-left: .5%;
+    padding-top: 2.5rem!important;
+  }
+  @include media-breakpoint-up(large){
+    margin-top: 6.5rem !important;
+    margin-right: 15%;
+    margin-left: 4.5%;
+    padding-top: 2.5rem!important;
+  }
+
+  .company-name {
+    text-transform: uppercase;
+    color: $orange;
+    font : {
+      size: 0.7rem;
+      weight: $bold;
+    }
+    margin-bottom: 0.5rem;
+  }
+  .product-name {
+    text-transform: capitalize;
+    color: hsl(0, 0%, 0%);
+    font : {
+      size: 1.5rem;
+      weight: $bold;
+    }
+    line-height: 1.8rem;
+    padding-bottom: 0.7rem;
+    @include media-breakpoint-up(medium){
+      font : {
+        size: 2rem;
+        weight: $bold;
+      }
+      line-height: 2rem;
+    }
+  }
+  .description {
+    font-size: 0.834rem;
+    line-height: 1.3rem;
+    margin-bottom: 1.2rem;
+    color: $darkGrayishBlue;
+  }
+}
+
+.c {
+  gap: 1rem;
+  flex-wrap: wrap;
+  @include media-breakpoint-up(medium){
+    flex-wrap: nowrap !important;
+  }
+}
+
+.pricing {
+  gap: 10vw;
+  .price {
+    font: {
+      size: 1.43rem;
+      weight: $bold;
+    }
+  }
+
+  .discount {
+    font : {
+      size: 0.7rem;
+      weight: $bold;
+    }
+    color: $orange;
+    background-color: $paleOrange;
+    padding: 0.1rem 0.2rem;
+    border-radius: 5px;
+    margin-left: -0.99rem;
+  }
+  .original-price {
+    font : {
+      size: 0.7rem;
+      weight: $bold;
+    }
+    color: $grayishBlue;
+    text-decoration: line-through;
+    @include media-breakpoint-up(medium){
+      margin-top: -1.5rem;
+    }
+  }
+  @include media-breakpoint-up(medium){
+    gap: 1.5rem;
+    width: 8rem;
+    align-items: center;
+    flex-wrap: wrap;
+   
+  }
+}
+
+.quantity {
+  .Count{
+    font: {
+      size: .8rem!important;
+      weight: $bold;
+    }
+  }
+  .cartbtn {
+    width: 100% !important;
+    padding-block: 0.7rem !important;
+    background-color: $orange !important;
+    border: none !important;
+    color: #fff !important;
+    border-radius: 6px !important;
+    
+    font: {
+      size: 0.83rem !important;
+      weight: $bold;
+    }
+    .svg {
+      width: 13px;
+      height: 13px;
+      filter: brightness(0) invert(1);
+    }
+  }
+  .op{
+    &:hover{
+      // filter: invert(97%) sepia(88%) saturate(1173%) hue-rotate(291deg) brightness(128%) contrast(100%);
+      opacity: .6;
+    }
+  }
+
+}
+
+.addtocart{
+  &:hover{
+    opacity: .7;
+  }
+}

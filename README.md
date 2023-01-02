@@ -1,3 +1,5 @@
+# About
+This project is created using Reactjs Framework, I created this to practice and apply useState, and props
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
